@@ -8,14 +8,10 @@
     <script>
       $(function () {
         // ここに処理を記述
-        $(".button").hover(
-          function () {
-            $(this).css("background-color", "red");
-          },
-          function () {
-            $(this).css("background-color", "");
-          }
-        );
+        $(".button").click(function () {
+          $(".button p").css("background-color", "");
+          $(this).find("p").css("background-color", "red");
+        });
       });
     </script>
   </head>
